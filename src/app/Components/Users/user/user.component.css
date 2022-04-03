@@ -1,0 +1,24 @@
+
+.block{
+     margin: 2px;
+    height: 150px;
+    font-size:10px;
+}
+.background{
+    background-color:black;
+   
+    
+}
+.fitimage{
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+    border-radius: 1px;
+    border-color: blue;
+    }
+  .bgimage{
+      
+      background-image: url("https://m.media-amazon.com/images/I/71joIi9cbML._SX3000_.jpg");
+  }
+
+ 

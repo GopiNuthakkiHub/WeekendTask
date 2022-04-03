@@ -1,0 +1,19 @@
+<ul>
+    <li class="card card-body mb-2">
+        <div class="row">
+            <div class="col-md-4">
+                <img [src]="ietem.image" width="200"height="200">
+            </div>
+            <div class="col-md-8">
+                <h3 [ngStyle]="currentStyles" (click)="setShowExtended()">{{ietem.title | uppercase}}</h3>
+            <div *ngIf="showextended">
+                <p>{{ietem.description}}</p>
+                <p>{{ietem.price |currency:"USD"}}</p>
+                <p>{{ietem.promotionDate | date}}</p>
+                <button class="btn btn-primary btn-sm mr-3" type="button">Add to Cart</button>
+                <button class="btn btn-primary btn-sm" type="button">Buy</button>
+            </div>
+        </div>
+        </div>
+    </li>
+</ul>
