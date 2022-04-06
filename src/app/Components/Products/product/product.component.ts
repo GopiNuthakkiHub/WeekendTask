@@ -6,6 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+   title='counter';
+   counter=0;
   @Input() product:any={} 
   showextended=true;
   currentStyles={}
@@ -26,4 +28,13 @@ export class ProductComponent implements OnInit {
      'cursor':'pointer'
    }
    }
+   count(value:string){
+     switch(value){
+     case '+':
+       this.counter++;
+       break;
+       case '-':
+      this.counter--;
+    }
+  }
   }

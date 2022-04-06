@@ -7,6 +7,7 @@ import { ListofietemsComponent } from './Components/listofietems/listofietems.co
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { ProductlistComponent } from './Components/productlist/productlist.component';
 import { ProductComponent } from './Components/Products/product/product.component';
+import { AdduserComponent } from './Components/Users/adduser/adduser.component';
 import { UserComponent } from './Components/Users/user/user.component';
 import { UsersComponent } from './Components/Users/users.component';
 
@@ -20,8 +21,8 @@ const routes: Routes = [
   {path:'product',component:ProductComponent},
   {path:'users',component:UsersComponent},
   {path:'ietems',component:IetemsComponent},
-  {path:'listofietems',component:ListofietemsComponent}
-  
+  {path:'listofietems',component:ListofietemsComponent},
+  {path:'adduser',component:AdduserComponent}
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 <ul>
     <li class="card card-body mb-2">
-        <div class="row">
+        <div  class="row">
             <div class="col-md-4">
                 <img [src]="product.image" width="200"height="200">
             </div>
@@ -12,8 +12,21 @@
                 <p>{{product.promotionDate | date}}</p>
                 <button class="btn btn-primary btn-sm mr-3" type="button">Add to Cart</button>
                 <button class="btn btn-primary btn-sm" type="button">Buy</button>
+                <div class="counter text-primary">
+                    <h5>{{title}}</h5>
+                    <h1>{{counter}}</h1>
+                    <div class="btn-div">
+                        <button class="btn btn-primary margnn-left:50px" (click)="count('+')">+</button>
+                        <button class="btn btn-primary margnn-left:50px" *ngIf="counter > 0"(click)="count('-')">-</button>
+                 </div>
+                </div>
             </div>
         </div>
         </div>
     </li>
 </ul>
+
+
+<!--<ng-template #noRecords>
+<p class="text-center text-danger display-6">sorry! No recordes founded</p>
+</ng-template>-->
